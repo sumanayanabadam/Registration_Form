@@ -28,10 +28,10 @@
             <input type="radio" value="Other" id="gender"name="r1">Other</input><br> 
                 <br> 
             <div class="button" id="btn">
-                <button  class="submit" id="submitBtn" type= "submit" ><b>Submit</b></button>
-                <button class="reset" id="resetBtn" type="reset"><b>Reset</b></button>
-                <button onclick="showBtn()" type="view" id="view_Data"><b>View</b></button>
-                <button class="hide" id ="saveBtn" type="hide" onclick="hideBtn()"><b>Hide</b></button>
+                <button  class="submit" id="submitBtn" type= "submit" onclick="submitButn()"><b>Submit</b></button>
+                <button class="reset" onclick="resetBtn()" id="resetBtn" type="reset"><b>Reset</b></button>
+                <button onclick="viewBtn()" type="view" id="view_Data"><b>View</b></button>
+                <button class="hide" id ="hide_Data" type="hide" onclick="hideBtn()"><b>Hide</b></button>
                 
             </div>
 
@@ -51,9 +51,8 @@
                 </tabel><br></br> -->
 
                 
-                <table  id='user_data' class="data"  >
-                 
-                    <thead>
+            <table  id='user_data' class="data"  >   
+                <thead>
                         <caption><h1>User Data</h1></caption>
                         <tr id="heading">
                             <th>Name</th>
