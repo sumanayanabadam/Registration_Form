@@ -63,12 +63,11 @@ submitBtn?.addEventListener('click', function () {
 
  
 
+function showBtn(){
+  document.getElementById('user_data').style.visibility = "visible";
+}
 function hideBtn(){
   document.getElementById('user_data').style.visibility = "hidden";
-  }
-
-  function showBtn(){
-    document.getElementById('user_data').style.visibility = "visible";
-    }
+}
 
     

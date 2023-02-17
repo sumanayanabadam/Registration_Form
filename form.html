@@ -3,14 +3,14 @@
         <title>Registration Form</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body onload="hideBtn()">
+    <body >
         <h1>RegistrationForm</h1>
         
                     
         </script>
         <form id="form">
             <div class="details">
-            <label class="name" >Candiates Name: </label><input type="text" class="textField" id="candiatename" placeholder="Full Name"></input><br>
+            <label class="name" >Name: </label><input type="text" class="textField" id="candiatename" placeholder="Full Name"></input><br>
             <label class="name" >Contact:</label> <input type="tel" maxlength="10" class="textField"id="number" placeholder="Contact Number"></input><br>
             <label class="name" > Age: </label> <input type="tel" maxlength="3" id="age" class="textField"placeholder="Age"></input><br>
             <label class="name" >Country:</label> <select id="selectField" class="textField" autofocus>
@@ -21,17 +21,17 @@
                     <option>Australia</option>
                 </select><br>
             <label class="name" >Email:</label> <input type="email" id="email" class="textField" placeholder="Email"></input><br>
-            <label class="name" >Address:</label> <textarea rows="5" cols="25"class="textField" id="address" placeholder="Enter your Address"></textarea><br></br>
+            <label class="name" >Address:</label> <textarea rows="5" cols="20"class="textField" id="address" placeholder="Enter your Address"></textarea><br></br>
             <label class="name" >Gender:</label>
-            <input type="radio" value="male"class="textField" id="gender" name="r1">male</input>
+            <input type="radio" value="male" id="gender" name="r1">male</input><br>
             <input type="radio" value="female" id="gender"name="r1">Female</input>
-            <input type="radio" value="Other" id="gender"name="r1">Other</input><br> 
+            <br> 
                 <br> 
             <div class="button" id="btn">
-                <button  class="submit" id="submitBtn" type= "submit" onclick="submitButn()"><b>Submit</b></button>
-                <button class="reset" onclick="resetBtn()" id="resetBtn" type="reset"><b>Reset</b></button>
-                <button onclick="viewBtn()" type="view" id="view_Data"><b>View</b></button>
-                <button class="hide" id ="hide_Data" type="hide" onclick="hideBtn()"><b>Hide</b></button>
+                <button  class="submit" id="submitBtn" type= "submit"><b>Submit</b></button>
+                <button class="reset"  id="resetBtn" type="reset"><b>Reset</b></button>
+                <button class="view" onclick="viewBtn()" id="viewBtn" type="view-data"><b>View</b></button>
+                <button class="hide" onclick="hideBtn()" id="hideBtn" type="hide_data"><b>Hide</b></button>
                 
             </div>
 
