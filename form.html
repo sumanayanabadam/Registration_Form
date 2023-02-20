@@ -4,10 +4,9 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body >
+        <div>
         <h1>RegistrationForm</h1>
-        
-                    
-        </script>
+
         <form id="form">
             <div class="details">
             <label class="name" >Name: </label><input type="text" class="textField" id="candiatename" placeholder="Full Name"></input><br>
@@ -26,32 +25,17 @@
             <input type="radio" value="male" id="gender" name="r1">male</input><br>
             <input type="radio" value="female" id="gender"name="r1">Female</input>
             <br> 
-                <br> 
-            <div class="button" id="btn">
+                <br>
                 <button  class="submit" id="submitBtn" type= "submit"><b>Submit</b></button>
                 <button class="reset"  id="resetBtn" type="reset"><b>Reset</b></button>
-                <button class="view" onclick="viewBtn()" id="viewBtn" type="view-data"><b>View</b></button>
-                <button class="hide" onclick="hideBtn()" id="hideBtn" type="hide_data"><b>Hide</b></button>
-                
-            </div>
+                </div>
+                </form>
 
-            
-                <!-- <tabel id="user_data" >
-                    
-                    <tr id="heading">
-                        <th>Name</th>
-                        <th>Contact</th>
-                        <th>Age</th>
-                        <th>country</th>
-                        <th>Email</th>
-                        <th>Address</th>
-                        <th>Gender</th>
-                    </tr>  
-                    
-                </tabel><br></br> -->
-
+                <button  onclick="showBtn()" id="viewBtn" ><b>View</b></button>
+                <button  onclick="hideBtn()" id="hideBtn" ><b>Hide</b></button>
                 
-            <table  id='user_data' class="data"  >   
+                
+            <table  id='user_data' class="data hidden"  >   
                 <thead>
                         <caption><h1>User Data</h1></caption>
                         <tr id="heading">
@@ -67,7 +51,8 @@
                         </tr>
                     </thead>
                 </table><br><br>
-        </form>
+                </div>
+        
         <script type="text/javascript" src="index.js"/> 
     </body>
 </html>
