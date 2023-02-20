@@ -68,5 +68,12 @@ button{
     color: rgb(189, 172, 172);
     width: 75%;
 }
+.hidden {
+    visibility : hidden;
+}
+
+.visible  {
+    visibility: visible;
+}
 
 
