@@ -22,7 +22,7 @@
             <label class="name" >Email:</label> <input type="email" id="email" class="textField" placeholder="Email"></input><br>
             <label class="name" >Address:</label> <textarea rows="5" cols="20"class="textField" id="address" placeholder="Enter your Address"></textarea><br></br>
             <label class="name" >Gender:</label>
-            <input type="radio" value="male" id="gender" name="r1">male</input><br>
+            <input type="radio" value="male" id="gender" name="r1">male</input>
             <input type="radio" value="female" id="gender"name="r1">Female</input>
             <br> 
                 <br>
@@ -30,12 +30,12 @@
                 <button class="reset"  id="resetBtn" type="reset"><b>Reset</b></button>
                 </div>
                 </form>
-
-                <button  onclick="showBtn()" id="viewBtn" ><b>View</b></button>
-                <button  onclick="hideBtn()" id="hideBtn" ><b>Hide</b></button>
+                <!-- <button  onclick="showBtn()" id="viewBtn" ><b>View</b></button>
+                <button  onclick="hideBtn()" id="hideBtn" ><b>Hide</b></button> -->
+                <button onclick="toggleBtn()" id="toggleBtn" ><b>Show / Hide</b></button>
                 
                 
-            <table  id='user_data' class="data hidden"  >   
+            <table  id='user_data' class="data " >   
                 <thead>
                         <caption><h1>User Data</h1></caption>
                         <tr id="heading">
