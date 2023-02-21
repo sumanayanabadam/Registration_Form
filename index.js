@@ -41,7 +41,8 @@ submitBtn?.addEventListener('click', function () {
     let country = document.getElementById('selectField').value
     let email = document.getElementById('email').value
     let address = document.getElementById('address').value
-    let gender = document.getElementById('gender').value
+    let gender_male = document.getElementById('male').checked;
+    let gender_female = document.getElementById('female').checked;
   
 
     localStorage.setItem('is_name',name);
@@ -50,7 +51,14 @@ submitBtn?.addEventListener('click', function () {
     localStorage.setItem('is_country', country);
     localStorage.setItem('is_email', email);
     localStorage.setItem('is_address', address);
-    localStorage.setItem('is_gender', gender);
+    if(gender_male){
+      localStorage.setItem('is_gender', "male");
+    }
+    else{
+      localStorage.setItem('is_gender', "female");
+    }
+    
+    
 
     if(!name || !phnnum || !age || !country || !email || !address || !gender){
       alert("Please Fill all the details..!")
@@ -62,29 +70,19 @@ submitBtn?.addEventListener('click', function () {
     row++;
 
     var cellName = newRow.insertCell(0);
-    cellName.innerHTML = name;
+    cellName.innerHTML = localStorage.getItem('is_name');
     var cellPhnnum = newRow.insertCell(1);
-    cellPhnnum.innerHTML = phnnum;
+    cellPhnnum.innerHTML = localStorage.getItem('is_phnnum');
     var cellage = newRow.insertCell(2);
-    cellage.innerHTML = age;
+    cellage.innerHTML = localStorage.getItem('is_age')
     var cellCountry = newRow.insertCell(3);
-    cellCountry.innerHTML = country;
+    cellCountry.innerHTML = localStorage.getItem('is_country');
     var cellemail = newRow.insertCell(4);
-    cellemail.innerHTML = email;
+    cellemail.innerHTML = localStorage.getItem('is_email');
     var celladdress = newRow.insertCell(5);
-    celladdress.innerHTML = address;
-    var cellGender = newRow.insertCell(6);
-    cellGender.innerHTML = gender;
-
-    
-
-    let username = localStorage.getItem('is_name')
-    let contact = localStorage.getItem('is_phnnum')
-    let userage = localStorage.getItem('is_age')
-    let Country = localStorage.getItem('is_country')
-    let mail_Id = localStorage.getItem('is_email')
-    let Location = localStorage.getItem('is_address')
-    let Gender = localStorage.getItem('is_gender')
+    celladdress.innerHTML = localStorage.getItem('is_address');
+    var cellgender = newRow.insertCell(6);
+    cellgender.innerHTML = localStorage.getItem('is_gender');
 });
 
 function toggleBtn(){
