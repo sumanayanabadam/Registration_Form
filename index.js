@@ -34,7 +34,8 @@ resetBtn?.addEventListener('click', function() {
 })
 
 //setting the data to local storage
-submitBtn?.addEventListener('click', function () {
+submitBtn?.addEventListener('click', function (e) {
+  e.preventDefault();
     let name= document.getElementById('candiatename').value
     let phnnum = document.getElementById('number').value
     let age = document.getElementById('age').value
@@ -60,9 +61,9 @@ submitBtn?.addEventListener('click', function () {
     
     
 
-    if(!name || !phnnum || !age || !country || !email || !address || !gender){
-      alert("Please Fill all the details..!")
-    }
+    // if(!name || !phnnum || !age || !country || !email || !address || !gender){
+    //   alert("Please Fill all the details..!")
+    // }
     
     var row=1;
     var display = document.getElementById('user_data');
