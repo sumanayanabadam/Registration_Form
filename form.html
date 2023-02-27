@@ -23,16 +23,18 @@
             <label class="name" >Email:</label> <input type="email" id="email" class="textField" placeholder="Email"></input><br>
             <label class="name" >Address:</label> <textarea rows="5" cols="20"class="textField" id="address" placeholder="Enter your Address"></textarea><br></br>
             <label class="name" >Gender:</label>
-            <input type="radio" value="male" id="male" name="r1">male</input>
-            <input type="radio" value="female" id="female"name="r1">Female</input>
+            <input type="radio" class="textField" value="male" id="male" name="r1">male</input>
+            <input type="radio" class="textField" value="female" id="female"name="r1">Female</input>
             <br>
             </div>
                 </form>
             <div class="btn">
-                <button  class="submit" id="submitBtn" type= "submit"><b>Submit</b></button>
-                <button class="reset"  id="resetBtn" type="reset"><b>Reset</b></button>
-                <button onclick="toggleBtn()" id="toggleBtn" ><b>Show / Hide</b></button>
+                <button  class="button" id="submitBtn" type= "submit"><b>Submit</b></button>
+                <button class="button"  id="resetBtn" type="reset"><b>Reset</b></button>
+                <button onclick="toggleBtn()" class="button" id="toggleBtn" ><b>Show / Hide</b></button>
+                
             </div>
+            
                 
             <table  id='user_data' class="data " >   
                 <thead>
@@ -48,6 +50,7 @@
                             <th>Edit</th>
                             <th>Delete</th>
                         </tr>
+                        
                     </thead>
                 </table><br><br>
                 </div>

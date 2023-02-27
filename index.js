@@ -89,9 +89,17 @@ submitBtn?.addEventListener('click', function (e) {
     var cellgender = newRow.insertCell(6);
     cellgender.innerHTML = localStorage.getItem('is_gender');
     var edit_Btn= newRow.insertCell(7);
-    edit_Btn.innerHTML = 'Edit';
-    edit_Btn.appendChild(editBtn);
-    
+    // edit_Btn.innerHTML = document.createElement('button');
+    // edit_Btn.appendChild(editBtn);
+    // const createButton= document.createElement('button');
+    // createButton.innerText= 'Click_Me';
+    // edit_Btn.appendChild(createButton);
+    const img = document.createElement("img");
+    img.src = "https://picsum.photos/200/301";
+    img.className = "fire";
+    edit_Btn.appendChild(img);
+
+
     
 });
 
