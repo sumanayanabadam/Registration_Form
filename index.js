@@ -27,7 +27,7 @@ resetBtn?.addEventListener('click', function() {
     name.value='';
     phnnum.value='';
     age.value='';
-    country.value='';
+    // country.value='';
     email.value='';
     address.value='';
     gender.value='';
@@ -44,8 +44,12 @@ submitBtn?.addEventListener('click', function (e) {
     let address = document.getElementById('address').value
     let gender_male = document.getElementById('male').checked;
     let gender_female = document.getElementById('female').checked;
+    let editBtn = document.querySelector("#edit_Btn")
+    
   
-
+    // editBtn.addEventListener('click', function(e) {
+    //     alert("edited");
+    // })
     localStorage.setItem('is_name',name);
     localStorage.setItem('is_phnnum',phnnum);
     localStorage.setItem('is_age', age);
@@ -84,6 +88,11 @@ submitBtn?.addEventListener('click', function (e) {
     celladdress.innerHTML = localStorage.getItem('is_address');
     var cellgender = newRow.insertCell(6);
     cellgender.innerHTML = localStorage.getItem('is_gender');
+    var edit_Btn= newRow.insertCell(7);
+    edit_Btn.innerHTML = 'Edit';
+    edit_Btn.appendChild(editBtn);
+    
+    
 });
 
 function toggleBtn(){
